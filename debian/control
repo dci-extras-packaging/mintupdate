@@ -18,7 +18,6 @@ Depends:
  python-apt,
  synaptic,
  mint-common,
- mint-mirrors,
  mint-upgrade-info,
  mint-kernel-info
 Conflicts: mintupdate-gnome, mintupdate-kde, mintupdate-xfce
