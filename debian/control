@@ -17,9 +17,7 @@ Depends:
  python-configobj,
  python-apt,
  synaptic,
- mint-common,
- mint-upgrade-info,
- mint-kernel-info
+ mint-common
 Conflicts: mintupdate-gnome, mintupdate-kde, mintupdate-xfce
 Replaces: mintupdate-gnome, mintupdate-kde, mintupdate-xfce
 Description: Update Manager
