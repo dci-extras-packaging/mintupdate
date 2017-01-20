@@ -7,8 +7,8 @@ override_dh_python2:
 	dh_python2 /usr/lib/linuxmint/mintUpdate
 
 build:
-	for file in `ls po/$$dir/*.po`; do \
+	for file in `ls po/mintupdate/*.po`; do \
 		lang=`echo $$file | sed 's/\.po$$//' | sed 's/.*\-//'`; \
 		install -d usr/share/linuxmint/locale/$$lang/LC_MESSAGES/; \
-		msgfmt -o usr/share/linuxmint/locale/$$lang/LC_MESSAGES/$$dir.mo $$file; \
+		msgfmt -o usr/share/linuxmint/locale/$$lang/LC_MESSAGES/mintupdate.mo $$file; \
 	done \
