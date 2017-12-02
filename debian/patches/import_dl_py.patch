@@ -1,0 +1,12 @@
+--- mintupdate-4.9.3+p20170904+git20170921.1338.orig/usr/lib/linuxmint/mintUpdate/mintUpdate.py
++++ mintupdate-4.9.3+p20170904+git20170921.1338/usr/lib/linuxmint/mintUpdate/mintUpdate.py
+@@ -47,7 +47,8 @@ if (architecture.find("x86_64") >= 0):
+     libc = ctypes.CDLL('libc.so.6')
+     libc.prctl(15, 'mintUpdate', 0, 0, 0)
+ else:
+-    import dl
++    #import dl
++    import DLFCN as dl
+     if os.path.exists('/lib/libc.so.6'):
+         libc = dl.open('/lib/libc.so.6')
+         libc.call('prctl', 15, 'mintUpdate', 0, 0, 0)
